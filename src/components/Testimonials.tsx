@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Quote, ChevronLeft, ChevronRight, Building2, Users, Code, Zap, Play, Pause } from "lucide-react";
+import { Quote, ChevronLeft, ChevronRight, Play, Pause, Telescope, Compass, Lightbulb, Sparkles, Shield } from "lucide-react";
 
 export const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,7 +14,7 @@ export const Testimonials = () => {
       author: "James Moessis",
       role: "Senior Software Engineer - Observability team",
       company: "Atlassian",
-      icon: Building2,
+      icon: Telescope,
       color: "text-blue-400"
     },
     {
@@ -22,7 +22,7 @@ export const Testimonials = () => {
       author: "Dan Gomez Blanco",
       role: "Principal Solutions Architect",
       company: "New Relic",
-      icon: Users,
+      icon: Compass,
       color: "text-green-400"
     },
     {
@@ -30,7 +30,7 @@ export const Testimonials = () => {
       author: "Antoine Toulme",
       role: "Principal Product Manager",
       company: "Splunk",
-      icon: Code,
+      icon: Lightbulb,
       color: "text-purple-400"
     },
     {
@@ -38,8 +38,16 @@ export const Testimonials = () => {
       author: "Juraci Paixão Kröhling",
       role: "Co-founder",
       company: "OllyGarden",
-      icon: Zap,
+      icon: Sparkles,
       color: "text-orange-400"
+    },
+    {
+      quote: "Telemetry is that more useful, the more consistent and easy it is to query. Even in a world with the OpenTelemetry semantic conventions, it is common to see implementation oversights and inconsistencies across automatic and manual instrumentations. When the idea of Instrumentation Score came up, I got into almost a drafting frenzy for new rules, delighted to have a way to detect those nasty problems that took too long to troubleshoot and root out.",
+      author: "Michele Mancioppi",
+      role: "Head of Product",
+      company: "Dash0",
+      icon: Shield,
+      color: "text-red-400"
     }
   ];
 
@@ -58,7 +66,7 @@ export const Testimonials = () => {
   // Auto-advance carousel every 8 seconds, but pause when manually paused or hovered
   useEffect(() => {
     if (isPaused || isHovered) return;
-    
+
     const interval = setInterval(nextTestimonial, 8000);
     return () => clearInterval(interval);
   }, [isPaused, isHovered]);
@@ -78,7 +86,7 @@ export const Testimonials = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card 
+          <Card
             className="bg-slate-800/80 border-slate-700 relative"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -116,19 +124,18 @@ export const Testimonials = () => {
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </Button>
-                
+
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={togglePause}
-                  className={`bg-slate-700 border-slate-600 hover:bg-slate-600 text-white ${
-                    isPaused ? 'bg-slate-600' : ''
-                  }`}
+                  className={`bg-slate-700 border-slate-600 hover:bg-slate-600 text-white ${isPaused ? 'bg-slate-600' : ''
+                    }`}
                   title={isPaused ? 'Resume slideshow' : 'Pause slideshow'}
                 >
                   {isPaused ? <Play className="w-4 h-4" /> : <Pause className="w-4 h-4" />}
                 </Button>
-                
+
                 <Button
                   variant="outline"
                   size="sm"
@@ -147,11 +154,10 @@ export const Testimonials = () => {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'bg-blue-400 w-8' 
-                    : 'bg-slate-600 hover:bg-slate-500'
-                }`}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex
+                  ? 'bg-blue-400 w-8'
+                  : 'bg-slate-600 hover:bg-slate-500'
+                  }`}
               />
             ))}
           </div>
