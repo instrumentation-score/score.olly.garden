@@ -17,10 +17,10 @@ export const Hero = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-            A standardized, numerical assessment for <br/>OpenTelemetry instrumentation effectiveness.
-            <p><br/><span className="text-blue-400 font-semibold">From 10 to 100.</span> Objective. Actionable. Industry-backed.</p>
-          </p>
+          <div className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
+            <p>A standardized, numerical assessment for <br/>OpenTelemetry instrumentation effectiveness.</p>
+            <p className="mt-4"><span className="text-blue-400 font-semibold">From 10 to 100.</span> Objective. Actionable. Industry-backed.</p>
+          </div>
 
           {/* Score visualization */}
           <div className="flex items-center justify-center gap-4 mb-10">
