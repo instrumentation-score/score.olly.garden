@@ -9,7 +9,7 @@ on:
   
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2204
     
     steps:
       - name: Checkout code
@@ -41,7 +41,7 @@ jobs:
 
   # Separate job for type checking
   typecheck:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2204
     
     steps:
       - name: Checkout code
@@ -60,7 +60,7 @@ jobs:
 
   # Job for checking build size and performance
   build-check:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2204
     
     steps:
       - name: Checkout code
