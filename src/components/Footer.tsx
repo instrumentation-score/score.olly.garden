@@ -1,4 +1,3 @@
-
 import { Activity } from "lucide-react";
 
 export const Footer = () => {
@@ -12,7 +11,7 @@ export const Footer = () => {
           </div>
           
           <div className="flex items-center gap-6 text-slate-400">
-            <span>© 2024 Instrumentation Score Initiative</span>
+            <span>© 2025 OllyGarden, Inc</span>
             <span>•</span>
             <span>Open Source</span>
             <span>•</span>
@@ -21,7 +20,7 @@ export const Footer = () => {
         </div>
         
         <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-500">
-          <p>Built with ❤️ by the observability community for better OpenTelemetry instrumentation.</p>
+          <p>Built with ❤️ by the OpenTelemetry community for better instrumentation quality assessment.</p>
         </div>
       </div>
     </footer>

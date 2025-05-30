@@ -1,12 +1,11 @@
-
 import { Badge } from "@/components/ui/badge";
 
 export const Vendors = () => {
   const vendors = [
     { name: "OllyGarden", description: "Cloud-native observability platform" },
-    { name: "New Relic", description: "Full-stack observability" },
-    { name: "Datadog", description: "Monitoring & analytics platform" },
     { name: "Dash0", description: "Developer-first observability" },
+    { name: "Datadog", description: "Monitoring & analytics platform" },
+    { name: "New Relic", description: "Full-stack observability" },
     { name: "Splunk", description: "Data platform & analytics" }
   ];
 
@@ -21,8 +20,8 @@ export const Vendors = () => {
             Supported by Leading Vendors
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            The Instrumentation Score initiative is backed by major observability and monitoring vendors, 
-            ensuring industry-wide adoption and standardization.
+            The Instrumentation Score specification is backed by major observability and monitoring vendors, 
+            ensuring industry-wide adoption and standardization of OpenTelemetry instrumentation quality assessment.
           </p>
         </div>
 
@@ -33,7 +32,6 @@ export const Vendors = () => {
               className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:bg-slate-800 transition-all duration-300 hover:border-blue-500/50"
             >
               <h3 className="text-xl font-bold text-white mb-2">{vendor.name}</h3>
-              <p className="text-slate-400">{vendor.description}</p>
             </div>
           ))}
         </div>

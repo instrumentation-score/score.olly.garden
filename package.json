@@ -1,7 +1,14 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "instrumentation-score-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Official website for the Instrumentation Score specification - a standardized metric for assessing OpenTelemetry instrumentation quality",
+  "homepage": "https://score.olly.garden",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/instrumentation-score/score.olly.garden"
+  },
+  "keywords": ["opentelemetry", "instrumentation", "observability", "scoring", "otlp"],
   "type": "module",
   "scripts": {
     "dev": "vite",

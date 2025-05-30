@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Activity, BarChart3 } from "lucide-react";
@@ -18,8 +17,13 @@ export const Hero = () => {
 
           {/* Subheading */}
           <div className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-            <p>A standardized, numerical assessment for <br/>OpenTelemetry instrumentation effectiveness.</p>
-            <p className="mt-4"><span className="text-blue-400 font-semibold">From 10 to 100.</span> Objective. Actionable. Industry-backed.</p>
+            <p>A standardized, vendor-neutral metric for assessing <br/>OpenTelemetry instrumentation quality.</p>
+            <p className="mt-4"><span className="text-blue-400 font-semibold">From 10 to 100.</span> Objective. Actionable. Community-driven.</p>
+          </div>
+
+          {/* Additional description */}
+          <div className="text-lg text-slate-400 mb-10 max-w-3xl mx-auto">
+            <p>Calculated by analyzing OpenTelemetry Protocol (OTLP) data streams against OpenTelemetry semantic conventions and community best practices.</p>
           </div>
 
           {/* Score visualization */}

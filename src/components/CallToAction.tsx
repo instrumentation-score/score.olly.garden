@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Github, BookOpen, MessageCircle } from "lucide-react";
@@ -22,9 +21,13 @@ export const CallToAction = () => {
           <Card className="bg-slate-800/80 border-slate-700 hover:bg-slate-800 transition-all duration-300">
             <CardContent className="p-6 text-center">
               <Github className="w-8 h-8 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">Explore the Code</h3>
-              <p className="text-slate-400 mb-4">Check out our open-source implementation and contribute to the project.</p>
-              <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white">
+              <h3 className="text-lg font-semibold text-white mb-2">Explore the Specification</h3>
+              <p className="text-slate-400 mb-4">Review the open-source specification and contribute to the community-driven project.</p>
+              <Button 
+                variant="outline" 
+                className="w-full bg-blue-600 border-blue-600 text-white hover:bg-blue-700 hover:border-blue-700 hover:shadow-lg transition-all duration-300 font-semibold py-6 text-base"
+                onClick={() => window.open('https://github.com/instrumentation-score/spec', '_blank')}
+              >
                 View on GitHub
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
@@ -34,10 +37,14 @@ export const CallToAction = () => {
           <Card className="bg-slate-800/80 border-slate-700 hover:bg-slate-800 transition-all duration-300">
             <CardContent className="p-6 text-center">
               <BookOpen className="w-8 h-8 text-green-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">Read the Docs</h3>
-              <p className="text-slate-400 mb-4">Learn how to implement and use Instrumentation Score in your environment.</p>
-              <Button variant="outline" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-white">
-                Documentation
+              <h3 className="text-lg font-semibold text-white mb-2">Read the Specification</h3>
+              <p className="text-slate-400 mb-4">Learn about the scoring methodology, rules, and implementation guidelines.</p>
+              <Button 
+                variant="outline" 
+                className="w-full bg-green-600 border-green-600 text-white hover:bg-green-700 hover:border-green-700 hover:shadow-lg transition-all duration-300 font-semibold py-6 text-base"
+                onClick={() => window.open('https://github.com/instrumentation-score/spec/blob/main/specification.md', '_blank')}
+              >
+                Read Specification
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </CardContent>
@@ -47,9 +54,13 @@ export const CallToAction = () => {
             <CardContent className="p-6 text-center">
               <MessageCircle className="w-8 h-8 text-purple-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">Join the Community</h3>
-              <p className="text-slate-400 mb-4">Connect with other observability engineers and share your experiences.</p>
-              <Button variant="outline" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white">
-                Join Discord
+              <p className="text-slate-400 mb-4">Connect with other observability engineers in the CNCF Slack workspace.</p>
+              <Button 
+                variant="outline" 
+                className="w-full bg-purple-600 border-purple-600 text-white hover:bg-purple-700 hover:border-purple-700 hover:shadow-lg transition-all duration-300 font-semibold py-6 text-base"
+                onClick={() => window.open('https://cloud-native.slack.com/archives/C08U9NN1XBR', '_blank')}
+              >
+                Join CNCF Slack
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </CardContent>
@@ -57,7 +68,11 @@ export const CallToAction = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 text-lg">
+          <Button 
+            size="lg" 
+            className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 text-lg"
+            onClick={() => window.open('https://github.com/instrumentation-score/spec', '_blank')}
+          >
             Get Started Today
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
