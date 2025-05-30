@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+# Instrumentation Score Website
 
-## Project info
+> Web interface for the Instrumentation Score specification - available at [score.olly.garden](https://score.olly.garden)
 
-**URL**: https://lovable.dev/projects/1b815029-7d18-4a2a-ac5a-b175a7f94030
+This repository contains the **website and web application** for the Instrumentation Score project. For the **actual specification, rules, and detailed documentation**, please visit the main specification repository: **[instrumentation-score/spec](https://github.com/instrumentation-score/spec)**.
 
-## How can I edit this code?
+## What is the Instrumentation Score?
 
-There are several ways of editing your application.
+The **Instrumentation Score** is a standardized, vendor-neutral metric that quantifies the quality of OpenTelemetry instrumentation. Represented as a numerical value from **10 to 100**, it provides objective feedback on how well a service or system follows OpenTelemetry best practices and semantic conventions.
 
-**Use Lovable**
+### Score Categories
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1b815029-7d18-4a2a-ac5a-b175a7f94030) and start prompting.
+| Score Range | Category              | Meaning                                    |
+| ----------- | --------------------- | ------------------------------------------ |
+| 90-100      | **Excellent**         | High standard of instrumentation quality   |
+| 75-89       | **Good**              | Solid quality; minor improvements possible |
+| 50-74       | **Needs Improvement** | Tangible issues requiring attention        |
+| 10-49       | **Poor**              | Significant problems needing urgent action |
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📋 Specification Resources
 
-**Use your preferred IDE**
+For the complete specification, rules, and documentation:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📖 **[Main Specification Repository](https://github.com/instrumentation-score/spec)** - Complete specification and rules  
+📄 **[Full Specification](https://github.com/instrumentation-score/spec/blob/main/specification.md)** - Technical specification document  
+📋 **[Rules Directory](https://github.com/instrumentation-score/spec/tree/main/rules)** - Complete set of scoring rules  
+🔧 **[Contributing Guide](https://github.com/instrumentation-score/spec/blob/main/CONTRIBUTING.md)** - How to contribute to the specification  
+🏛️ **[Governance](https://github.com/instrumentation-score/spec/blob/main/GOVERNANCE.md)** - Project governance and maintainers  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🌐 Website Development
 
-Follow these steps:
+This website provides an overview of the Instrumentation Score specification.
+
+### Prerequisites
+
+- Node.js & bun ([install bun](https://bun.sh/docs/installation))
+
+### Getting Started
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone this repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd score.olly.garden
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+bun install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Start development server
+bun run dev
 ```
 
-**Edit a file directly in GitHub**
+### Technologies Used
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This website is built with:
 
-**Use GitHub Codespaces**
+- **Vite** - Fast build tool and development server
+- **TypeScript** - Type-safe JavaScript
+- **React** - UI framework
+- **shadcn-ui** - Modern UI components
+- **Tailwind CSS** - Utility-first CSS framework
+- **Bun** - Fast JavaScript runtime and package manager
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🚀 Deployment
 
-## What technologies are used for this project?
+This website is deployed at **[score.olly.garden](https://score.olly.garden)** using **Netlify**.
 
-This project is built with:
+To deploy updates:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. **Automatic deployment**: Pushes to the main branch trigger automatic deployments via Netlify
+2. **Manual deployment**: Use `bun run build` to build the project locally
 
-## How can I deploy this project?
+## 🤝 Community
 
-Simply open [Lovable](https://lovable.dev/projects/1b815029-7d18-4a2a-ac5a-b175a7f94030) and click on Share -> Publish.
+### Get Involved
 
-## Can I connect a custom domain to my Lovable project?
+We welcome contributions from the OpenTelemetry community!
 
-Yes, you can!
+- 💬 **Join Discussion**: [CNCF Slack #instrumentation-score](https://cloud-native.slack.com/archives/C08U9NN1XBR)
+- 🐛 **Report Issues**: 
+  - **Specification Issues**: [instrumentation-score/spec Issues](https://github.com/instrumentation-score/spec/issues)
+  - **Website Issues**: [This repository's issues]
+- 🔀 **Submit Changes**: 
+  - **Specification Changes**: Follow the [spec contributing guide](https://github.com/instrumentation-score/spec/blob/main/CONTRIBUTING.md)
+  - **Website Changes**: Submit PRs to this repository
+- 📅 **Attend Meetings**: Community meetings (schedule in Slack)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Maintainers
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- [Antoine Toulme](https://github.com/atoulme) (@atoulme), Splunk
+- [Daniel Gomez Blanco](https://github.com/danielgblanco) (@danielgblanco), New Relic
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling) (@jpkrohling), OllyGarden
+- [Michele Mancioppi](https://github.com/mmanciop) (@mmanciop), Dash0
+
+## 📜 License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/instrumentation-score/spec/blob/main/LICENSE) file for details.
+
+---
+
+**🔗 Links:**
+- **Website**: [score.olly.garden](https://score.olly.garden)
+- **Specification**: [github.com/instrumentation-score/spec](https://github.com/instrumentation-score/spec)
+- **Community**: [CNCF Slack #instrumentation-score](https://cloud-native.slack.com/archives/C08U9NN1XBR)
