@@ -19,8 +19,7 @@ export const Hero = () => {
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent">
-            Instrumentation
-            <span className="text-blue-400">Score</span>
+            Instrumentation <span className="text-blue-400">Score</span>
           </h1>
 
           {/* Subheading */}
