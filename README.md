@@ -51,6 +51,36 @@ bun install
 bun run dev
 ```
 
+### Testing
+
+This project includes comprehensive tests to ensure code quality and reliability:
+
+```sh
+# Run tests once
+bun run test:run
+
+# Run tests in watch mode
+bun run test
+
+# Run tests with UI
+bun run test:ui
+
+# Run tests with coverage report
+bun run coverage
+```
+
+### Continuous Integration
+
+This project uses GitHub Actions for automated testing and deployment:
+
+- **CI Workflow** (`ci.yml`): Runs on every push and PR
+  - Tests on Node.js 20
+  - Linting and type checking
+  - Build verification
+  - Bundle size analysis
+
+All PRs must pass CI checks before merging.
+
 ### Technologies Used
 
 This website is built with:
