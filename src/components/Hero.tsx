@@ -52,7 +52,7 @@ export const Hero = () => {
               Get Started
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button variant="outline" size="lg" className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8">
+            <Button variant="outline" size="lg" className="border-slate-400 text-slate-100 hover:bg-slate-700 hover:text-white px-8">
               Learn More
             </Button>
           </div>

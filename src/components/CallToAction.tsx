@@ -24,7 +24,7 @@ export const CallToAction = () => {
               <Github className="w-8 h-8 text-blue-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">Explore the Code</h3>
               <p className="text-slate-400 mb-4">Check out our open-source implementation and contribute to the project.</p>
-              <Button variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-700">
+              <Button variant="outline" className="border-slate-400 text-slate-100 hover:bg-slate-700 hover:text-white">
                 View on GitHub
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
@@ -36,7 +36,7 @@ export const CallToAction = () => {
               <BookOpen className="w-8 h-8 text-green-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">Read the Docs</h3>
               <p className="text-slate-400 mb-4">Learn how to implement and use Instrumentation Score in your environment.</p>
-              <Button variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-700">
+              <Button variant="outline" className="border-slate-400 text-slate-100 hover:bg-slate-700 hover:text-white">
                 Documentation
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
@@ -48,7 +48,7 @@ export const CallToAction = () => {
               <MessageCircle className="w-8 h-8 text-purple-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">Join the Community</h3>
               <p className="text-slate-400 mb-4">Connect with other observability engineers and share your experiences.</p>
-              <Button variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-700">
+              <Button variant="outline" className="border-slate-400 text-slate-100 hover:bg-slate-700 hover:text-white">
                 Join Discord
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
