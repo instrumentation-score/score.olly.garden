@@ -44,36 +44,6 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* CTA buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8">
-              Get Started
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-slate-400 text-slate-100 hover:bg-slate-700 hover:text-white px-8">
-              Learn More
-            </Button>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center">
-            <div>
-              <div className="text-3xl font-bold text-blue-400">5+</div>
-              <div className="text-slate-400">Industry Vendors</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-blue-400">10-100</div>
-              <div className="text-slate-400">Score Range</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-blue-400">OTLP</div>
-              <div className="text-slate-400">Protocol Based</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-blue-400">Open</div>
-              <div className="text-slate-400">Source Initiative</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
