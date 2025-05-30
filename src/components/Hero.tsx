@@ -19,7 +19,7 @@ export const Hero = () => {
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
             A standardized, numerical assessment for <br/>OpenTelemetry instrumentation effectiveness.
-            <p><span className="text-blue-400 font-semibold">From 10 to 100.</span> Objective. Actionable. Industry-backed.</p>
+            <p><br/><span className="text-blue-400 font-semibold">From 10 to 100.</span> Objective. Actionable. Industry-backed.</p>
           </p>
 
           {/* Score visualization */}
