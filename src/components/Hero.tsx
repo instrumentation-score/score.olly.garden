@@ -11,12 +11,6 @@ export const Hero = () => {
       
       <div className="relative container mx-auto px-6 py-20 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <Badge variant="secondary" className="mb-6 bg-blue-500/10 text-blue-400 border-blue-500/20 hover:bg-blue-500/20">
-            <Activity className="w-4 h-4 mr-2" />
-            OpenTelemetry Excellence Initiative
-          </Badge>
-
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent">
             Instrumentation <span className="text-blue-400">Score</span>
