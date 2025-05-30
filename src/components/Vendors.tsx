@@ -13,9 +13,6 @@ export const Vendors = () => {
     <section className="py-20 bg-slate-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4 bg-green-500/10 text-green-400 border-green-500/20">
-            Industry Backed
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Supported by Leading Vendors
           </h2>

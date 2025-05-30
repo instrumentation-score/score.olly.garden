@@ -8,12 +8,10 @@ export const Audience = () => {
     {
       icon: Building2,
       title: "Observability Platform Vendors",
-      emoji: "🏢",
-      description: "We expect vendors to adopt the Instrumentation Score as a standard metric in their platforms.",
+      description: "Vendors may adopt the Instrumentation Score as a standard metric in their platforms.",
       benefits: [
         { icon: Target, text: "Consistent Quality Assessment: Standardized scoring across different tools and platforms" },
         { icon: Users, text: "Customer Value: Clear instrumentation quality insights for users" },
-        { icon: Lightbulb, text: "Competitive Advantage: Advanced instrumentation guidance capabilities" },
         { icon: MessageSquare, text: "Customer Advisory: Use the spec as a framework when advising customers on instrumentation best practices" }
       ],
       color: "text-blue-400",
@@ -23,7 +21,6 @@ export const Audience = () => {
     {
       icon: Users2,
       title: "Observability & Engineering Teams",
-      emoji: "👩‍💻",
       description: "Observability engineers and engineering teams are the primary users who will interpret and act on Instrumentation Scores.",
       benefits: [
         { icon: Target, text: "Quality Assessment: Understand instrumentation health at a glance" },
@@ -41,16 +38,9 @@ export const Audience = () => {
     <section className="py-20 bg-slate-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4 bg-purple-500/10 text-purple-400 border-purple-500/20">
-            Target Audience
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Who Benefits from Instrumentation Score?
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            While this specification can be used and implemented by anyone, we have identified key audiences 
-            who will benefit most from the Instrumentation Score.
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
@@ -62,7 +52,7 @@ export const Audience = () => {
                     <audience.icon className={`w-6 h-6 ${audience.color}`} />
                   </div>
                   <div>
-                    <CardTitle className="text-white text-xl">{audience.emoji} {audience.title}</CardTitle>
+                    <CardTitle className="text-white text-xl">{audience.title}</CardTitle>
                   </div>
                 </div>
                 <CardDescription className="text-slate-400 text-base">
