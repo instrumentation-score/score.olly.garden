@@ -20,7 +20,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-500">
-          <p>Built with ❤️ by the OpenTelemetry community for better instrumentation quality assessment.</p>
+          <p>Built with ❤️ by the Instrumentation Score community for better instrumentation quality assessment.</p>
         </div>
       </div>
     </footer>
