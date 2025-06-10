@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Quote, ChevronLeft, ChevronRight, Play, Pause, Telescope, Compass, Lightbulb, Sparkles, Shield } from "lucide-react";
+import { Quote, ChevronLeft, ChevronRight, Play, Pause, Telescope, Compass, Lightbulb, Sparkles, Shield, TrendingUp } from "lucide-react";
 
 export const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,6 +48,14 @@ export const Testimonials = () => {
       company: "Dash0",
       icon: Shield,
       color: "text-red-400"
+    },
+    {
+      quote: "With the Instrumentation Score initiative it will be possible to objectively and automatically assess the quality of the telemetry coming out of your applications. This is a big step forward towards standardizing the instrumentation space, helping practitioners to express the Return On Investment for observability. I applaud the effort and hope to see widespread adoption of it in the context of OpenTelemetry and beyond.",
+      author: "Michael Hausenblas",
+      role: "Product Manager",
+      company: "AWS",
+      icon: TrendingUp,
+      color: "text-yellow-400"
     }
   ];
 

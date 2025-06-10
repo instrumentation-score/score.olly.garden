@@ -2,11 +2,12 @@ import { Badge } from "@/components/ui/badge";
 
 export const Vendors = () => {
   const vendors = [
-    { name: "OllyGarden", description: "Cloud-native observability platform" },
-    { name: "Dash0", description: "Developer-first observability" },
-    { name: "Datadog", description: "Monitoring & analytics platform" },
-    { name: "New Relic", description: "Full-stack observability" },
-    { name: "Splunk", description: "Data platform & analytics" }
+    "OllyGarden",
+    "Dash0", 
+    "Datadog",
+    "New Relic",
+    "Splunk",
+    "Grafana Labs"
   ];
 
   return (
@@ -28,7 +29,7 @@ export const Vendors = () => {
               key={index} 
               className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:bg-slate-800 transition-all duration-300 hover:border-blue-500/50"
             >
-              <h3 className="text-xl font-bold text-white mb-2">{vendor.name}</h3>
+              <h3 className="text-xl font-bold text-white mb-2">{vendor}</h3>
             </div>
           ))}
         </div>

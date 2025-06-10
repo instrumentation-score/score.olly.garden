@@ -97,9 +97,9 @@ describe('Testimonials Component', () => {
   it('displays dot indicators for all testimonials', () => {
     render(<Testimonials />)
     
-    // Should have 5 dot indicators (one for each testimonial)
+    // Should have 6 dot indicators (one for each testimonial)
     const dots = document.querySelectorAll('button[class*="rounded-full"]')
-    expect(dots.length).toBe(5)
+    expect(dots.length).toBe(6)
   })
 
   it('allows navigation via dot indicators', () => {
@@ -126,7 +126,8 @@ describe('Testimonials Component', () => {
       'Dan Gomez Blanco', 
       'Antoine Toulme',
       'Juraci Paixão Kröhling',
-      'Michele Mancioppi'
+      'Michele Mancioppi',
+      'Michael Hausenblas'
     ]
     
     expectedAuthors.forEach((author, index) => {
