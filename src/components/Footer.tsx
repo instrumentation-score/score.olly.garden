@@ -9,7 +9,7 @@ export const Footer = () => {
             <Activity className="w-6 h-6 text-blue-400" />
             <span className="text-xl font-bold text-white">Instrumentation Score</span>
           </div>
-          
+
           <div className="flex items-center gap-6 text-slate-400">
             <span>© 2025 OllyGarden, Inc</span>
             <span>•</span>
@@ -18,9 +18,9 @@ export const Footer = () => {
             <span>Community Driven</span>
           </div>
         </div>
-        
+
         <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-500">
-          <p>Built with ❤️ by the OpenTelemetry community for better instrumentation quality assessment.</p>
+          <p>Built with ❤️ by the Instrumentation Score community for better instrumentation quality assessment.</p>
         </div>
       </div>
     </footer>
