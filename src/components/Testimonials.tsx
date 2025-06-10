@@ -56,6 +56,14 @@ export const Testimonials = () => {
       company: "AWS",
       icon: TrendingUp,
       color: "text-yellow-400"
+    },
+    {
+      quote: "Great observability starts with great instrumentation—but how do we know when we've gotten it right? The Instrumentation Score introduces a much-needed feedback loop, turning best practices into something concrete and actionable. With clear scores and rule severities, we finally know what to prioritize and why. It's like giving a compass for navigating the telemetry landscape.",
+      author: "Marylia Gutierrez",
+      role: "Staff Software Engineer",
+      company: "Grafana Labs",
+      icon: Compass,
+      color: "text-teal-400"
     }
   ];
 
