@@ -24,7 +24,7 @@ describe('Footer Component', () => {
 
   it('includes the community message', () => {
     render(<Footer />)
-    expect(screen.getByText(/Built with ❤️ by the OpenTelemetry community/)).toBeInTheDocument()
+    expect(screen.getByText(/Built with ❤️ by the Instrumentation Score community/)).toBeInTheDocument()
     expect(screen.getByText(/better instrumentation quality assessment/)).toBeInTheDocument()
   })
 

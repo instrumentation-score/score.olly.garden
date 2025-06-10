@@ -29,6 +29,6 @@ describe('Index Page', () => {
 
   it('includes community-related content', () => {
     render(<Index />)
-    expect(screen.getByText(/OpenTelemetry community/)).toBeInTheDocument()
+    expect(screen.getByText(/Instrumentation Score community/)).toBeInTheDocument()
   })
 }) 
