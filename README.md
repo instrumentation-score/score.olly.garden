@@ -105,9 +105,9 @@ To deploy updates:
 
 ### Get Involved
 
-We welcome contributions from the OpenTelemetry community!
+We welcome all contributions!
 
-- 💬 **Join Discussion**: [CNCF Slack #instrumentation-score](https://cloud-native.slack.com/archives/C08U9NN1XBR)
+- 💬 **Join Discussion**: [CNCF Slack #instrumentation-score](https://cloud-native.slack.com/archives/C090FEG5R0F)
 - 🐛 **Report Issues**: 
   - **Specification Issues**: [instrumentation-score/spec Issues](https://github.com/instrumentation-score/spec/issues)
   - **Website Issues**: [This repository's issues]
@@ -132,4 +132,4 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](https:
 **🔗 Links:**
 - **Website**: [score.olly.garden](https://score.olly.garden)
 - **Specification**: [github.com/instrumentation-score/spec](https://github.com/instrumentation-score/spec)
-- **Community**: [CNCF Slack #instrumentation-score](https://cloud-native.slack.com/archives/C08U9NN1XBR)
+- **Community**: [CNCF Slack #instrumentation-score](https://cloud-native.slack.com/archives/C090FEG5R0F)

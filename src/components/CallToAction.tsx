@@ -58,7 +58,7 @@ export const CallToAction = () => {
               <Button 
                 variant="outline" 
                 className="w-full bg-purple-600 border-purple-600 text-white hover:bg-purple-700 hover:border-purple-700 hover:shadow-lg transition-all duration-300 font-semibold py-6 text-base"
-                onClick={() => window.open('https://cloud-native.slack.com/archives/C08U9NN1XBR', '_blank')}
+                onClick={() => window.open('https://cloud-native.slack.com/archives/C090FEG5R0F', '_blank')}
               >
                 Join CNCF Slack
                 <ArrowRight className="ml-2 w-4 h-4" />

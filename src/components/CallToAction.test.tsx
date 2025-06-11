@@ -51,7 +51,7 @@ describe('CallToAction Component', () => {
     render(<CallToAction />)
     const slackButton = screen.getByText('Join CNCF Slack')
     fireEvent.click(slackButton)
-    expect(mockWindowOpen).toHaveBeenCalledWith('https://cloud-native.slack.com/archives/C08U9NN1XBR', '_blank')
+    expect(mockWindowOpen).toHaveBeenCalledWith('https://cloud-native.slack.com/archives/C090FEG5R0F', '_blank')
   })
 
   it('has main get started button', () => {
