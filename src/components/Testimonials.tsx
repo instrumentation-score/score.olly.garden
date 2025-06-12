@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Quote, ChevronLeft, ChevronRight, Play, Pause, Telescope, Compass, Lightbulb, Sparkles, Shield, TrendingUp } from "lucide-react";
+import { Quote, ChevronLeft, ChevronRight, Play, Pause, Telescope, Compass, Lightbulb, Sparkles, Shield, TrendingUp, Target } from "lucide-react";
 
 export const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,6 +64,14 @@ export const Testimonials = () => {
       company: "Grafana Labs",
       icon: Compass,
       color: "text-teal-400"
+    },
+    {
+      quote: "The #O11y Instrumentation Score is a great way to understand the quality of #OpenTelemetry instrumentation. It offers a way to grok completeness and maturity of #OTel observability instrumentation following semantic conventions and best practices.",
+      author: "Alolita Sharma",
+      role: "Engineering Leader",
+      company: "Apple",
+      icon: Target,
+      color: "text-pink-400"
     }
   ];
 
