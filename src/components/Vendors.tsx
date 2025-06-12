@@ -7,7 +7,8 @@ export const Vendors = () => {
     "Datadog",
     "New Relic",
     "Splunk",
-    "Grafana Labs"
+    "Grafana Labs",
+    "Honeycomb",
   ];
 
   return (
