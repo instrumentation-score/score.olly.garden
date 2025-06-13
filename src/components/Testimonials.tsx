@@ -74,7 +74,7 @@ export const Testimonials = () => {
       color: "text-pink-400"
     },
     {
-      quote: "Perhaps the only thing worse than no instrumentation is bad instrumentation. Observability Score gives developers and operators a framework for not only evaluating instrumentation quality, but a platform for building fast feedback loops into our telemetry development processes.",
+      quote: "Perhaps the only thing worse than no instrumentation is bad instrumentation. Instrumentation Score gives developers and operators a framework for not only evaluating instrumentation quality, but a platform for building fast feedback loops into our telemetry development processes.",
       author: "Austin Parker",
       role: "Director of Open Source",
       company: "honeycomb.io",
