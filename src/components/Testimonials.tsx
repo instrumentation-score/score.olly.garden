@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Quote, ChevronLeft, ChevronRight, Play, Pause, Telescope, Compass, Lightbulb, Sparkles, Shield, TrendingUp, Target } from "lucide-react";
+import { Quote, ChevronLeft, ChevronRight, Play, Pause, Telescope, Compass, Lightbulb, Sparkles, Shield, TrendingUp, Target, Hexagon } from "lucide-react";
 
 export const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,6 +72,14 @@ export const Testimonials = () => {
       company: "Apple",
       icon: Target,
       color: "text-pink-400"
+    },
+    {
+      quote: "Perhaps the only thing worse than no instrumentation is bad instrumentation. Instrumentation Score gives developers and operators a framework for not only evaluating instrumentation quality, but a platform for building fast feedback loops into our telemetry development processes.",
+      author: "Austin Parker",
+      role: "Director of Open Source",
+      company: "honeycomb.io",
+      icon: Hexagon,
+      color: "text-blue-400"
     }
   ];
 
@@ -189,4 +197,4 @@ export const Testimonials = () => {
       </div>
     </section>
   );
-}; 
+};

@@ -97,9 +97,9 @@ describe('Testimonials Component', () => {
   it('displays dot indicators for all testimonials', () => {
     render(<Testimonials />)
     
-    // Should have 8 dot indicators (one for each testimonial)
+    // Should have 9 dot indicators (one for each testimonial)
     const dots = document.querySelectorAll('button[class*="rounded-full"]')
-    expect(dots.length).toBe(8)
+    expect(dots.length).toBe(9)
   })
 
   it('allows navigation via dot indicators', () => {
@@ -145,4 +145,4 @@ describe('Testimonials Component', () => {
     expect(document.querySelector('section')).toBeInTheDocument()
     expect(document.querySelector('blockquote')).toBeInTheDocument()
   })
-}) 
+})
