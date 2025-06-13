@@ -20,7 +20,7 @@ export const Testimonials = () => {
     {
       quote: "If you cannot measure something, you cannot improve it. Without a standard set of measurable best practices, engineers are left wondering what \"good\" telemetry looks like. We need a North Star for high-quality instrumentation, and a way to measure progress towards it across services, regardless of the observability backend where data is ultimately stored.",
       author: "Dan Gomez Blanco",
-      role: "Principal Solutions Architect",
+      role: "Principal Observability Architect",
       company: "New Relic",
       icon: Compass,
       color: "text-green-400"
