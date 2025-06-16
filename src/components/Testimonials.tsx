@@ -80,6 +80,14 @@ export const Testimonials = () => {
       company: "honeycomb.io",
       icon: Hexagon,
       color: "text-blue-400"
+    },
+    {
+      quote: "The struggle with telemetry quality and consistency is something anyone building or operating modern systems has faced. You put in the effort to instrument, but without a clear benchmark or easy way to spot inconsistencies, it often feels like you're guessing or constantly fighting fires caused by messy data. The idea of an 'Instrumentation Score' is incredibly compelling because it provides that much-needed structure and clarity. It gives us a measurable standard and, more importantly, a practical feedback loop. This isn't just about getting a number; it's about turning abstract best practices into concrete steps, helping teams prioritize fixes, catch problems early, and ultimately ensure the telemetry we rely on is genuinely high-quality, consistent, and useful for making decisions and troubleshooting.",
+      author: "Gaurav Saxena",
+      role: "Director of Engineering",
+      company: "Ford Motor Company",
+      icon: Target,
+      color: "text-blue-500"
     }
   ];
 
