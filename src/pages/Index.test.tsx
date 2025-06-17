@@ -17,8 +17,8 @@ describe('Index Page', () => {
     expect(screen.getByText('Instrumentation')).toBeInTheDocument()
     expect(screen.getByText('Score')).toBeInTheDocument()
     
-    // Footer section
-    expect(screen.getByText('© 2025 OllyGarden, Inc')).toBeInTheDocument()
+    // Footer section - check for community message instead
+    expect(screen.getByText(/Instrumentation Score community/)).toBeInTheDocument()
   })
 
   it('has the correct background styling', () => {

@@ -98,9 +98,9 @@ describe('Testimonials Component', () => {
   it('displays dot indicators for all testimonials', () => {
     render(<Testimonials />)
     
-    // Should have 10 dot indicators (one for each testimonial)
+    // Should have 11 dot indicators (one for each testimonial)
     const dots = document.querySelectorAll('button[class*="rounded-full"]')
-    expect(dots.length).toBe(10)
+    expect(dots.length).toBe(11)
   })
 
   it('allows navigation via dot indicators', () => {

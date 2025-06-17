@@ -11,8 +11,6 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center gap-6 text-slate-400">
-            <span>© 2025 OllyGarden, Inc</span>
-            <span>•</span>
             <span>Open Source</span>
             <span>•</span>
             <span>Community Driven</span>
