@@ -88,6 +88,14 @@ export const Testimonials = () => {
       company: "Ford Motor Company",
       icon: Target,
       color: "text-blue-500"
+    },
+    {
+      quote: "Like with many things, with instrumentation, you get what you put in. If you're putting garbage in, you'll get garbage out. Having something like Instrumentation Score gives measurable goals to achieve when producing telemetry, this is super helpful. It will give organizations tooling to identify and address known gaps. I look forward to seeing how this evolves over time and how it will help move OpenTelemetry's semantic conventions forward.",
+      author: "Alex Boten",
+      role: "Staff Software Engineer",
+      company: "Honeycomb",
+      icon: Hexagon,
+      color: "text-amber-400"
     }
   ];
 

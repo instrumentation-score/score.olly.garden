@@ -15,9 +15,8 @@ describe('Footer Component', () => {
     expect(document.querySelector('.lucide-activity')).toBeInTheDocument()
   })
 
-  it('shows copyright and company information', () => {
+  it('shows community and branding information', () => {
     render(<Footer />)
-    expect(screen.getByText('© 2025 OllyGarden, Inc')).toBeInTheDocument()
     expect(screen.getByText('Open Source')).toBeInTheDocument()
     expect(screen.getByText('Community Driven')).toBeInTheDocument()
   })
