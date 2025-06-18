@@ -18,19 +18,19 @@ export const Hero = () => {
           {/* Subheading */}
           <div className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
             <p>A standardized, vendor-neutral metric for assessing <br/>OpenTelemetry instrumentation quality.</p>
-            <p className="mt-4"><span className="text-blue-400 font-semibold">From 10 to 100.</span> Objective. Actionable. Community-driven.</p>
+            <p className="mt-4"><span className="text-blue-400 font-semibold">From 0 to 100.</span> Objective. Actionable. Community-driven.</p>
           </div>
 
           {/* Additional description */}
           <div className="text-lg text-slate-400 mb-10 max-w-3xl mx-auto">
-            <p>Calculated by analyzing OpenTelemetry Protocol (OTLP) data streams against OpenTelemetry semantic conventions and community best practices.</p>
+            <p>Calculated using weighted scoring based on rule criticality against OpenTelemetry semantic conventions and community best practices.</p>
           </div>
 
           {/* Score visualization */}
           <div className="flex items-center justify-center gap-4 mb-10">
             <div className="flex items-center gap-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-lg px-4 py-2">
               <BarChart3 className="w-5 h-5 text-red-400" />
-              <span className="text-red-400 font-mono font-bold">10</span>
+              <span className="text-red-400 font-mono font-bold">0</span>
               <span className="text-slate-400">Poor</span>
             </div>
             <div className="h-px bg-gradient-to-r from-red-400 via-yellow-400 to-green-400 w-16"></div>

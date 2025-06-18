@@ -22,20 +22,20 @@ describe('Hero Component', () => {
 
   it('displays score range information', () => {
     render(<Hero />)
-    expect(screen.getByText('From 10 to 100.')).toBeInTheDocument()
+    expect(screen.getByText('From 0 to 100.')).toBeInTheDocument()
     expect(screen.getByText('Objective. Actionable. Community-driven.')).toBeInTheDocument()
   })
 
   it('shows the score visualization with Poor and Excellent labels', () => {
     render(<Hero />)
-    expect(screen.getByText('10')).toBeInTheDocument()
+    expect(screen.getByText('0')).toBeInTheDocument()
     expect(screen.getByText('Poor')).toBeInTheDocument()
     expect(screen.getByText('100')).toBeInTheDocument()
     expect(screen.getByText('Excellent')).toBeInTheDocument()
   })
 
-  it('includes information about OTLP data analysis', () => {
+  it('includes information about weighted scoring methodology', () => {
     render(<Hero />)
-    expect(screen.getByText(/OpenTelemetry Protocol \(OTLP\) data streams/i)).toBeInTheDocument()
+    expect(screen.getByText(/weighted scoring based on rule criticality/i)).toBeInTheDocument()
   })
 }) 

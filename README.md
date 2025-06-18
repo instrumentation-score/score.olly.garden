@@ -6,16 +6,16 @@ This repository contains the **website and web application** for the Instrumenta
 
 ## What is the Instrumentation Score?
 
-The **Instrumentation Score** is a standardized, vendor-neutral metric that quantifies the quality of OpenTelemetry instrumentation. Represented as a numerical value from **10 to 100**, it provides objective feedback on how well a service or system follows OpenTelemetry best practices and semantic conventions.
+The **Instrumentation Score** is a standardized, vendor-neutral metric that quantifies the quality of OpenTelemetry instrumentation. Represented as a numerical value from **0 to 100**, it provides objective feedback on how well a service or system follows OpenTelemetry best practices and semantic conventions.
 
 ### Score Categories
 
 | Score Range | Category              | Meaning                                    |
 | ----------- | --------------------- | ------------------------------------------ |
 | 90-100      | **Excellent**         | High standard of instrumentation quality   |
-| 75-89       | **Good**              | Solid quality; minor improvements possible |
-| 50-74       | **Needs Improvement** | Tangible issues requiring attention        |
-| 10-49       | **Poor**              | Significant problems needing urgent action |
+| 70-89       | **Good**              | Solid quality; minor improvements possible |
+| 50-69       | **Fair**              | Moderate quality; some issues to address   |
+| 0-49        | **Poor**              | Significant problems needing urgent action |
 
 ## 📋 Specification Resources
 
