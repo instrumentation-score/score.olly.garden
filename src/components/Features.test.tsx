@@ -27,7 +27,7 @@ describe('Features Component', () => {
   it('displays objective assessment feature with correct description', () => {
     render(<Features />)
     expect(screen.getByText('Objective Assessment')).toBeInTheDocument()
-    expect(screen.getByText(/Standardized scoring from 10-100/)).toBeInTheDocument()
+    expect(screen.getByText(/Standardized scoring from 0-100/)).toBeInTheDocument()
   })
 
   it('includes OpenTelemetry references', () => {
@@ -37,12 +37,17 @@ describe('Features Component', () => {
     expect(screen.getByText(/established OpenTelemetry conventions/)).toBeInTheDocument()
   })
 
-  it('shows the score categories', () => {
+  it('shows the updated score categories', () => {
     render(<Features />)
     expect(screen.getByText(/Excellent \(90-100\)/)).toBeInTheDocument()
-    expect(screen.getByText(/Good \(75-89\)/)).toBeInTheDocument()
-    expect(screen.getByText(/Needs Improvement \(50-74\)/)).toBeInTheDocument()
-    expect(screen.getByText(/Poor \(10-49\)/)).toBeInTheDocument()
+    expect(screen.getByText(/Good \(70-89\)/)).toBeInTheDocument()
+    expect(screen.getByText(/Fair \(50-69\)/)).toBeInTheDocument()
+    expect(screen.getByText(/Poor \(0-49\)/)).toBeInTheDocument()
+  })
+
+  it('mentions weighted scoring methodology', () => {
+    render(<Features />)
+    expect(screen.getByText(/Critical rules weighted 4× more than Low priority rules/)).toBeInTheDocument()
   })
 
   it('has proper semantic structure with section element', () => {

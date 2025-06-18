@@ -6,7 +6,7 @@ export const Features = () => {
     {
       icon: Target,
       title: "Objective Assessment",
-      description: "Standardized scoring from 10-100 based on OpenTelemetry semantic conventions and community best practices, with transparent calculation methodology.",
+      description: "Standardized scoring from 0-100 using weighted rule evaluation based on OpenTelemetry semantic conventions and community best practices, with transparent calculation methodology.",
       color: "text-blue-400"
     },
     {
@@ -36,7 +36,7 @@ export const Features = () => {
     {
       icon: Shield,
       title: "Industry Standards",
-      description: "Built on established OpenTelemetry conventions with qualitative categories: Excellent (90-100), Good (75-89), Needs Improvement (50-74), Poor (10-49).",
+      description: "Built on established OpenTelemetry conventions with qualitative categories: Excellent (90-100), Good (70-89), Fair (50-69), Poor (0-49). Critical rules weighted 4× more than Low priority rules.",
       color: "text-red-400"
     }
   ];
